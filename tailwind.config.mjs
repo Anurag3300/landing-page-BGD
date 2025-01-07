@@ -7,6 +7,16 @@ export default {
   ],
   theme: {
     extend: {
+      animation: {
+        'bounce-y': 'bounceY 2s infinite ease-in',
+      },
+      keyframes: {
+        bounceY: {
+          '0%, 100%': { transform: 'translateY(0)', easing: 'ease-in' },
+          '50%': { transform: 'translateY(-10px)' ,easing: 'ease-in'},
+        },
+      },
+
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
